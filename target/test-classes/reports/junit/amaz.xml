@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="44.966964">
+    <testcase classname="To validate search function" name="To validate search function" time="37.817196">
+        <system-out><![CDATA[Given To user launch edge browser and pass valid url........................passed
+When To user enter valid product name.......................................passed
+Then To user Click search  button...........................................passed
+And To user quit edge browser...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To invalidate Login functionality" name="To validate login with invalid username and invalid password" time="7.149768">
+        <failure message="java.lang.AssertionError: To check&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.step.StepDefinition.toUserEnterInvalidUsernameAndInvalidPassword(StepDefinition.java:42)&#13;&#10;&#9;at ✽.To user enter invalid username and invalid password(file:src/test/resources/featurefile/chrome.feature:8)&#13;&#10;"><![CDATA[Given To user launch browser and pass url...................................passed
+When To user enter invalid username and invalid password....................failed
+Then To user Click login  button............................................skipped
+
+StackTrace:
+java.lang.AssertionError: To check
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.step.StepDefinition.toUserEnterInvalidUsernameAndInvalidPassword(StepDefinition.java:42)
+	at ✽.To user enter invalid username and invalid password(file:src/test/resources/featurefile/chrome.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
